@@ -1,0 +1,2 @@
+Please input the price:
+The initial price is 382.727273

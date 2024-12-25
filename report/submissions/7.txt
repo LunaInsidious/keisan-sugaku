@@ -1,0 +1,38 @@
+問題7 以下のプログラムの実行結果はどのようになるか．できる限りプログラムを実行せずに解答せよ．
+
+```
+#include <stdio.h>
+
+int main(void){
+    int i=2;
+    switch(i){
+        case 1:
+          printf("1");
+        case 2:
+          printf("2");
+        case 3:
+          printf("3\n");
+          break;
+        default:
+          printf("other");
+    }
+    return 0;
+}
+```
+
+回答
+
+このプログラムを実行した場合のフローは以下。
+
+1. main関数が実行される。
+2. i変数をint型で初期値2で定義。
+3. switch文で、iの値を評価する
+  1. iの値は1ではないので、case 1は無視。
+  2. iの値は2なので、それ以降の処理をbreakが出るまで実行。
+    1. printfで2を標準出力する。
+    2. printfで3を末尾改行で標準出力する。
+    3. breakによりswitch文を抜け出す。
+4. main関数が正常終了する。
+
+よって、このプログラムの標準出力は
+23

@@ -1,0 +1,7 @@
+6 zipだけ
+5 zip,T_0.zip
+4 pdf
+
+curl --max-time 600 -v -X POST -F "metadata=<./city_jinteki_injured_metadata.json" -F "file=@./EQDIS_20240926160120_1_00_city_jinteki_injured.zip;type=application/octet-stream" http://pubsub-engine.stg-tokyo-sobo.local/
+
+curl --max-time 600 -v -X POST -F "metadata=<./seismic_metadata.json" -F "file=@./EQDIS_20240926160120_1_00_m1km_seismic.zip;type=application/octet-stream" http://pubsub-engine.stg-tokyo-sobo.local/

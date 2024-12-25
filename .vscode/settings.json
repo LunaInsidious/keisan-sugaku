@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "Dockerfile*": "dockerfile",
+        "stdio.h": "c",
+        "fenv.h": "c"
+    }
+}
